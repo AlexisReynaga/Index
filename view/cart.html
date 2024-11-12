@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="/css/cart.css">
+</head>
+<body>
+
+    <div class="cart-container">
+        <header class="cart-header">
+            <div class="cart-logo">
+                <h1>Mi Tienda</h1>
+            </div>
+            <nav class="cart-nav">
+                <a href="/view/index.html">Inicio</a>
+                <a href="/view/menu.html">Menú</a>
+                <a href="/view/cart.html">Carrito</a>
+            </nav>
+        </header>
+
+        <div class="cart-items">
+            <h2>Productos en tu Carrito</h2>
+            <!-- Aquí se agregarán dinámicamente los productos del carrito -->
+            <div id="cart-products"></div> <!-- Contenedor para los productos -->
+        </div>
+
+        <div class="cart-summary">
+            <h3>Resumen de la Compra</h3>
+            <div class="summary-item">
+                <span>Subtotal</span>
+                <span id="cart-subtotal">$0.00</span>
+            </div>
+            <div class="summary-item">
+                <span>Envío</span>
+                <span>$5.00</span>
+            </div>
+            <div class="summary-total">
+                <span>Total</span>
+                <span id="cart-total">$5.00</span>
+            </div>
+            <a href="checkout.html" class="checkout-btn">Proceder al Pago</a>
+        </div>
+
+        <!-- Contador de carrito -->
+        <div id="cart-count">0</div>
+    </div>
+
+    <script src="/js/cart.js?v=1"></script>
+
+</body>
+</html>

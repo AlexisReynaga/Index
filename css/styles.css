@@ -88,24 +88,7 @@ body {
     border-radius: 10px;
 }
 
-/* Styles for content sections on other pages */
-.content {
-    padding: 40px;
-    text-align: center;
-}
-
-.content h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.content p {
-    font-size: 1.2em;
-    color: #555;
-}
-
-/* Común Section Styles */
+/* Productos más vendidos */
 .comun {
     text-align: center;
     padding: 40px 20px;
@@ -129,12 +112,11 @@ body {
 
 .comun-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas fijas */
-    gap: 20px; /* Espacio entre las tarjetas */
-    max-width: 1200px; /* Ajusta el ancho máximo del contenedor */
-    margin: 0 auto; /* Centra el contenedor */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-
 
 .card {
     text-align: center;
@@ -143,6 +125,10 @@ body {
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .card:hover {
@@ -161,77 +147,56 @@ body {
     color: #333;
     font-weight: 500;
     line-height: 1.5;
-}
-/* Seccion de Menu */
-.menu-section {
-    padding: 40px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.menu-category {
-    margin-bottom: 40px;
-}
-
-.menu-category h2 {
-    font-size: 2em;
-    color: #333;
-    border-bottom: 2px solid #E48257;
-    display: inline-block;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
-}
-
-.menu-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    padding: 10px 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 10px 0;
-}
-
-.menu-item h3 {
-    font-size: 1.5em;
-    color: #333;
-    margin: 0;
-}
-
-.menu-item p {
-    font-size: 1em;
-    color: #555;
-    margin: 5px 0;
-    flex: 1;
-    text-align: left;
+    margin-bottom: 10px;
 }
 
 .price {
     font-size: 1.2em;
     font-weight: bold;
     color: #E48257;
+    margin-bottom: 15px;
 }
 
-.content {
-    background-image: url('menu.jpg'); /* Reemplaza 'path/to/your/image.jpg' por el nombre de tu imagen */
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    color: white;
-    text-align: center;
-}
-
-.content h1 {
-    font-size: 3em;
-    font-weight: bold;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5); /* Añade un fondo semi-transparente detrás del texto */
+.add-to-cart-btn {
     padding: 10px 20px;
-    border-radius: 10px;
+    background-color: #E48257;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
 }
 
+.add-to-cart-btn:hover {
+    background-color: #c06c4d;
+}
+
+/* Toast */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #E48257;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 9999;
+}
+
+.toast.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.toast-message {
+    font-size: 1.2em;
+}
+
+/* Otros estilos pueden ir aquí */

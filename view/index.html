@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFETERIA DE INGENIERIA</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Barra de navegacion -->
+    <nav class="navbar">
+        <div class="logo">CAFETERIA DE INGENIERIA</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="cart.html">Carrito</a></li>
+            <li><a href="perfil.html" class="contact-btn">Perfil</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero  -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Bienvenido </h1>
+            <p>La mejor comida de zona universitaria al alcance de cualquiera Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Minus non provident deleniti eum consequatur voluptates magni. Perspiciatis illum
+                recusandae iure possimus vitae, eligendi modi ducimus impedit porro incidunt, molestiae accusamus.</p>
+            <a href="menu.html" class="order-now-btn">Ir al Menu</a>
+        </div>
+        <div class="hero-image">
+            <img src="/imagenes/burger.jpg" alt="Plate with burger and vegetables">
+        </div>
+    </section>
+
+    <!-- Productos más vendidos -->
+    <section class="comun">
+        <h2>Nuestros Productos Más Vendidos</h2>
+        <p>¡Descubre nuestros productos más populares!</p>
+        <div class="comun-grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="/imagenes/burger.jpg" alt="Hamburguesa">
+                <p class="card-title">Hamburguesa Doble</p>
+                <p class="price">$45</p>
+                <button class="add-to-cart-btn" data-product="Hamburguesa Doble" data-price="45">Agregar al carrito</button>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="/imagenes/burger.jpg" alt="Postre con Meal">
+                <p class="card-title">Postre con Meal</p>
+                <p class="price">$30</p>
+                <button class="add-to-cart-btn" data-product="Postre con Meal" data-price="30">Agregar al carrito</button>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="/imagenes/burger.jpg" alt="Postre Satisfactorio">
+                <p class="card-title">Postre Satisfactorio</p>
+                <p class="price">$20</p>
+                <button class="add-to-cart-btn" data-product="Postre Satisfactorio" data-price="20">Agregar al carrito</button>
+            </div>
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="/imagenes/burger.jpg" alt="Postre Sabroso">
+                <p class="card-title">Postre Sabroso</p>
+                <p class="price">$25</p>
+                <button class="add-to-cart-btn" data-product="Postre Sabroso" data-price="25">Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+    <!-- Toast para mensaje emergente -->
+    <div id="toast" class="toast">
+        <p id="toast-message" class="toast-message"></p>
+    </div>
+
+    <script src="/js/cart.js"></script>
+</body>
+
+</html>

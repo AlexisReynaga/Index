@@ -1,0 +1,210 @@
+/* Reset de estilos por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F9F4EF;
+    color: #333;
+}
+
+/* Contenedor principal del carrito */
+.cart-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Header del carrito */
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #eedab2;
+    border-radius: 10px;
+}
+
+.cart-logo h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.cart-nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.cart-nav a:hover {
+    color: #E48257;
+}
+
+/* Estilo de los productos en el carrito */
+.cart-items {
+    margin-top: 30px;
+}
+
+.cart-items h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F9F9F9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.cart-item img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.cart-item-details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.cart-item-details h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.cart-item-details p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.cart-item-quantity {
+    margin-bottom: 10px;
+}
+
+.cart-item-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #E48257;
+}
+
+.add-to-cart {
+    background-color: #E48257;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #D77A4D;
+}
+
+/* Estilo del resumen de compra */
+.cart-summary {
+    background-color: #F9F9F9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.cart-summary h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    border-top: 2px solid #ddd;
+    padding-top: 10px;
+}
+
+.checkout-btn {
+    display: block;
+    background-color: #E48257;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.checkout-btn:hover {
+    background-color: #D77A4D;
+}
+
+/* Estilo para el contador de productos en el carrito */
+#cart-count {
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: #E48257;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el mensaje tipo toast */
+/* Estilo para el mensaje tipo toast */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #E48257; /* Fondo bonito */
+    color: white;
+    padding: 15px 25px;
+    border-radius: 25px; /* Bordes redondeados */
+    font-size: 1.2em;
+    font-weight: bold;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s, bottom 0.5s ease-in-out; /* Transiciones suaves */
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra para darle un toque de profundidad */
+    text-align: center;
+}
+
+/* Animación de mostrar el toast */
+.toast.show {
+    opacity: 1;
+    visibility: visible;
+    bottom: 30px; /* Subir un poco cuando aparece */
+}
+
+/* Animación de desaparecer */
+.toast.hide {
+    opacity: 0;
+    visibility: hidden;
+    bottom: 20px; /* Desaparece hacia abajo */
+}
