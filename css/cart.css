@@ -8,7 +8,7 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #F9F4EF;
+    background-color: #F5F5DC;  /* Beige claro */
     color: #333;
 }
 
@@ -17,7 +17,7 @@ body {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #FFF;
+    background-color: #FFF;  /* Blanco */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
@@ -28,23 +28,24 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #eedab2;
+    background-color: #4CAF50;  /* Verde */
     border-radius: 10px;
 }
 
 .cart-logo h1 {
     font-size: 2em;
     font-weight: bold;
+    color: #FFF;  /* Blanco */
 }
 
 .cart-nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #333;
+    color: #FFF;  /* Blanco */
 }
 
 .cart-nav a:hover {
-    color: #E48257;
+    color: #2C6B2F;  /* Verde oscuro */
 }
 
 /* Estilo de los productos en el carrito */
@@ -55,13 +56,14 @@ body {
 .cart-items h2 {
     font-size: 2em;
     margin-bottom: 20px;
+    color: #CD5C08;  /* Marrón */
 }
 
 .cart-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F9F9F9;
+    background-color: #F9F9F9;  /* Blanco roto */
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -97,11 +99,11 @@ body {
 .cart-item-price {
     font-size: 1.2em;
     font-weight: bold;
-    color: #E48257;
+    color: #CD5C08;  /* Marrón */
 }
 
 .add-to-cart {
-    background-color: #E48257;
+    background-color: #4CAF50;  /* Verde */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -110,12 +112,12 @@ body {
 }
 
 .add-to-cart:hover {
-    background-color: #D77A4D;
+    background-color: #2C6B2F;  /* Verde oscuro */
 }
 
 /* Estilo del resumen de compra */
 .cart-summary {
-    background-color: #F9F9F9;
+    background-color: #F9F9F9;  /* Blanco roto */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -125,6 +127,7 @@ body {
 .cart-summary h3 {
     font-size: 2em;
     margin-bottom: 20px;
+    color: #CD5C08;  /* Marrón */
 }
 
 .summary-item {
@@ -142,11 +145,12 @@ body {
     margin-top: 20px;
     border-top: 2px solid #ddd;
     padding-top: 10px;
+    color: #CD5C08;  /* Marrón */
 }
 
 .checkout-btn {
     display: block;
-    background-color: #E48257;
+    background-color: #4CAF50;  /* Verde */
     color: white;
     padding: 15px;
     text-align: center;
@@ -157,14 +161,14 @@ body {
 }
 
 .checkout-btn:hover {
-    background-color: #D77A4D;
+    background-color: #2C6B2F;  /* Verde oscuro */
 }
 
 /* Estilo para el contador de productos en el carrito */
 #cart-count {
     font-size: 1.5em;
     font-weight: bold;
-    background-color: #E48257;
+    background-color: #4CAF50;  /* Verde */
     color: white;
     padding: 5px 10px;
     border-radius: 50%;
@@ -175,13 +179,12 @@ body {
 }
 
 /* Estilo para el mensaje tipo toast */
-/* Estilo para el mensaje tipo toast */
 .toast {
     position: fixed;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #E48257; /* Fondo bonito */
+    background-color: #4CAF50;  /* Verde */
     color: white;
     padding: 15px 25px;
     border-radius: 25px; /* Bordes redondeados */
@@ -207,4 +210,26 @@ body {
     opacity: 0;
     visibility: hidden;
     bottom: 20px; /* Desaparece hacia abajo */
+}
+
+.remove-item {
+    background-color: #FF4C4C; /* Rojo bonito */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.remove-item:hover {
+    background-color: #D93F3F; /* Rojo más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Agrandar un poco el botón */
+}
+
+.remove-item:focus {
+    outline: none; /* Evitar borde de enfoque */
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2); /* Agregar sombra sutil al enfocar */
 }

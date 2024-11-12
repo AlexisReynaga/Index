@@ -1,0 +1,107 @@
+/* Estilos generales de perfil */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F9F4EF;
+    color: #333;
+}
+
+/* Barra de navegación estilo carrito */
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4CAF50;  /* Color más cálido y en tono amarillo dorado */
+    border-radius: 10px;
+}
+
+.cart-logo h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.cart-nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.cart-nav a:hover {
+    color: #F07C30;  /* Naranja para hover */
+}
+
+/* Estilos específicos del contenedor de perfil */
+.profile-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #FFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.profile-header h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.profile-field {
+    margin-bottom: 15px;
+}
+
+.profile-field label {
+    font-weight: bold;
+    color: #333;
+}
+
+.profile-field p {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 5px;
+}
+
+.profile-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.edit-button, .save-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #F07C30;  /* Naranja para el botón de editar */
+    color: white;
+}
+
+.save-button {
+    background-color: #A7D96F;  /* Verde suave para el botón de guardar */
+    color: #333;
+}
+
+.edit-button:hover {
+    background-color: #D1651B;  /* Naranja oscuro para hover */
+}
+
+.save-button:hover {
+    background-color: #89C06D;  /* Verde más oscuro para hover */
+}
